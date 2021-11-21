@@ -1,0 +1,2178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+
+html {
+    zoom: 80%;
+}
+
+/* customized browser (*chrome)  scrollbar elemet  */
+
+html::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#84b3ff, #00ff62, #84b3ff);
+    border-radius: 50px;
+}
+html::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(#db92fd, #6d4ec2, #db92fd);
+    border-radius: 50px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(24, 24, 24);
+    border-radius: 50px;
+}
+html::-webkit-scrollbar-track:hover {
+    background-color: black;
+    border-radius: 50px;
+}
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+/* textarea scroll customization */
+textarea::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#4292b8, #29e1e7, #2f6e72);
+    border-radius: 50px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(#db92fd, #6026ff, #db92fd);
+    border-radius: 50px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+textarea::-webkit-scrollbar-track:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+textarea::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+/* start header section  */
+
+.header {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+/* first letter "F" in the logo starts */
+
+.letterF {
+    width: 3.7rem;
+    padding-left: 4rem;
+    padding-top: 0.5rem;
+}
+.letterFdiv1 {
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-top-left-radius: 3rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 5.8s;
+}
+
+.letterFs1 {
+    float: left;
+    width: 2.5rem;
+    height: 1.1rem;
+    border-top-right-radius: 50px;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 6s;
+}
+
+.letterFdiv2 {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-top-left-radius: 2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 5.6s;
+}
+
+.letterFdiv3 {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 5.3s;
+}
+
+.letterFs2 {
+    float: none;
+    width: 2.8rem;
+    height: 1rem;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+.letterFdiv4 {
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 4.7s;
+}
+
+.letterFdiv5 {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 4.3s;
+}
+
+.letterFdiv6 {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 4s;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    float: left;
+}
+
+/* <  2nd-3rd letter O  start> */
+
+.outer1 {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    position: relative;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 5s;
+    margin-top: 3.5rem;
+}
+
+.outer2 {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    position: relative;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 5s;
+    margin-top: 3.5rem;
+    margin-left: 0.9rem;
+}
+
+.innerOletter {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 0);
+    margin-left: 0.7rem;
+    margin-top: 0.8rem;
+}
+
+.letterOdiv1 {
+    height: 0rem;
+}
+/* letter part 1 d :start */
+
+.letterDpart1sub {
+    width: 2.5rem;
+    height: 3.2rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-iteration-count: linear;
+    animation-duration: 3.5s;
+    margin-top: 2.8rem;
+    margin-left: 0.9rem;
+}
+
+.zero {
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 1.2rem;
+    background-color: rgb(0, 0, 0);
+    margin-left: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+/* <letter D  start> */
+
+.letterDmain {
+    width: 100px;
+    display: flex;
+    padding-top: 0.6rem;
+}
+
+.letterDPart2 {
+    padding-bottom: 100px;
+}
+
+.letterD2 {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-top-left-radius: 2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 6s;
+}
+
+.letterD4 {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 5.5s;
+}
+
+.letterD5 {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+.letterD6 {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+    animation-name: example;
+    animation-duration: 4.5s;
+}
+
+.letterD7 {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+
+    animation-name: example;
+    animation-duration: 4s;
+    border-bottom-right-radius: 2rem;
+    float: left;
+}
+
+/* letter I start */
+.letterI {
+    margin-left: 0.9rem;
+}
+
+.dot {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 206, 8);
+    border-radius: 1rem;
+    animation-name: example;
+    animation-duration: 5.4s;
+    margin-top: 1.5rem;
+    margin-left: 0.9rem;
+    animation-iteration-count: none;
+}
+
+/* < start part i under > */
+.partI {
+    margin-left: 0.9rem;
+    flex: left;
+}
+
+.i1 {
+    width: 1.2rem;
+    height: 1rem;
+    animation-iteration-count: none;
+    background-color: rgb(250, 206, 8);
+    margin-top: 0.9rem;
+    animation-name: example;
+    animation-duration: 5s;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.i2 {
+    width: 1.2rem;
+    height: 1rem;
+    flex: left;
+    background-color: rgb(250, 206, 8);
+    animation-iteration-count: none;
+    animation-name: example;
+    animation-duration: 4.5s;
+}
+
+.i3 {
+    width: 1.2rem;
+    height: 1rem;
+    flex: left;
+    background-color: rgb(250, 206, 8);
+    animation-iteration-count: none;
+    animation-name: example;
+    animation-duration: 4s;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+    
+/* ------end the logo food section  ------ */
+
+
+/* fullmode,chat,linkedin,git  buttons
+ */
+
+.buttonImg {
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 0.4;
+}
+.buttonImg:hover {
+    width: 3rem;
+    height: 3rem;
+    opacity: 2;
+}
+
+.open-button1 {
+    background-color: black;
+    border: 0, none;
+    width: 3rem;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    margin-left: 9rem;
+    margin-top: 4rem;
+}
+
+.open-button2 {
+    background-color: black;
+    border: 0, none;
+    width: 3rem;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    margin-left: 0.9rem;
+}
+
+.open-button3 {
+    background-color: black;
+    border: 0, none;
+    width: 3rem;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    margin-left: 0.9rem;
+}
+
+.open-button4 {
+    background-color: black;
+    border: 0, none;
+    width: 3rem;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    margin-left: 0.9rem;
+}
+
+.open-button5 {
+    background-color: black;
+    border: 0, none;
+    width: 3rem;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    margin-left: 0.9rem;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    margin-left: 40rem;
+    z-index: 9;
+    border-radius: 10rem;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 17rem;
+    height: 460px;
+    padding-top: 0.5rem;
+    padding-left: 0.6rem;
+    margin-top: 0.5rem;
+    font-size: medium;
+    font-family: monospace;
+    background-image: linear-gradient(#ffa784, #ff3b76, #a676ff, #98c0fd);
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: bolder;
+    border: 2px solid #535353;
+    background: #535353;
+    resize: none;
+    min-height: 300px;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+
+/* When the textarea gets focus,*/
+.form-container textarea:focus {
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: 2px solid #000000;
+    font-size: 30px;
+    font-family: monospace;
+    text-shadow: #004472;
+    animation-iteration-count: infinite;
+    animation-name: exampleText;
+    animation-duration: 30s;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(#a8fa94, #007226);
+    font-size: 30px;
+    font-family: monospace;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    width: 40%;
+    height: 60px;
+    margin: 20px;
+    margin-top: 0.2rem;
+    border-radius: 45px;
+}
+
+.form-container .btn:focus {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(#2bd600, #00531c);
+    font-size: 35px;
+    font-family: monospace;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    width: 40%;
+    height: 60px;
+    margin: 20px;
+    margin-top: 0.2rem;
+    border-radius: 45px;
+}
+
+.btncancel {
+    color: black;
+    background-image: linear-gradient(#ffb0b0, #ff2a2a);
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    height: 60px;
+    margin-top: 0.2rem;
+    border-radius: 45px;
+}
+
+.btncancel:focus {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(#db3434, #ff0000);
+    font-size: 35px;
+    font-family: monospace;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    width: 40%;
+    height: 60px;
+    margin-top: 0.2rem;
+    border-radius: 45px;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+.name {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+hr {
+    height: 0.1rem;
+    background-color: rgb(250, 206, 8);
+    animation-iteration-count: infinite;
+    width: 100%;
+    animation-name: example;
+    animation-duration: 13s;
+
+    border: 0px;
+    float: left;
+    filter: blur(1px);
+    position: relative;
+}
+
+/* -------  header section ends  ------ */
+
+/* --------------body section css start ----------------- */
+.parentBody {
+    position: relative;
+
+    background-color: #467048;
+}
+.subHeadSticky {
+    background-color: #00ff62;
+    height: 10rem;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    margin-top: 0.1rem;
+}
+
+/* parallel effect in body part */
+
+.mouse_move {
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.mouse_move h1 {
+    font-size: 5rem;
+    word-spacing: 20px;
+    letter-spacing: 1rem;
+    padding-top: 2rem;
+    font-family: "Cabin Sketch";
+    text-align: center;
+    animation-name: LiveLoveEat;
+    animation-duration: 13s;
+    color: rgb(255, 255, 255);
+    filter: blur(0.5px);
+}
+
+.mouse_move img {
+    position: absolute;
+   
+  
+}
+
+#img1 {
+    top: 200px;
+    left: 120px;
+    height: 60px;
+    width: 60px;
+   
+}
+
+#img2 {
+    bottom: -500px;
+    right: 439px;
+    height: 60px;
+    width: 60px;
+}
+#img3 {
+    bottom: -440px;
+    right: 330px;
+    height: 60px;
+    width: 60px;
+}
+#img4 {
+    top: 358px;
+    right: 1213px;
+    height: 60px;
+    width: 60px;
+}
+
+#img5 {
+    top: 208px;
+    right: 800px;
+    height: 60px;
+    width: 60px;
+}
+#img6 {
+    top: 566px;
+    right: 78px;
+    height: 60px;
+    width: 60px;
+}
+#img7 {
+    top: 270px;
+    right: 699px;
+    height: 110px;
+    width: 45px;
+}
+#img8 {
+    top: 500px;
+    left: 237px;
+    height: 60px;
+    width: 60px;
+}
+#img9 {
+    top: 650px;
+    left: 250px;
+    height: 60px;
+    width: 60px;
+}
+#img10 {
+    top: 750px;
+    right: 292px;
+    height: 60px;
+    width: 60px;
+}
+#img11 {
+    top: 189px;
+    right: 485px;
+    height: 100px;
+    width: 50px;
+}
+#img12 {
+    top: 596px;
+    left: 107px;
+        height: 60px;
+    width: 60px;
+}
+#img13 {
+    top: 600px;
+    left: 400px;
+    height: 60px;
+    width: 48px;
+}
+#img14 {
+top: 514px;
+left: 470px;
+height: 46px;
+width: 60px;
+}
+
+/* sub heading sticky mode */
+
+.subHeadSticky {
+    width: 100%;
+    height: 3rem;
+    background-color: #000000;
+    position: sticky;
+    margin-top: 0.5rem;
+}
+
+.TagHead {
+    width: 100%;
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    word-spacing: 6rem;
+    cursor: url(cursor/watermelon.png), pointer;
+}
+
+.aTag {
+    text-decoration: none;
+    color: rgb(195, 195, 195);
+    cursor: url(cursor/watermelon.png), pointer;
+    font-family: "Bayon";
+    font-size: 1.7rem;
+}
+
+.aTag:hover {
+    color: rgb(43, 255, 89);
+    text-decoration: #ffffff line-through 0.2rem;
+    cursor: url(cursor/watermelon.png), pointer;
+    font-family: "Bayon";
+}
+
+/* 
+favourite food head */
+
+.flex-container-fav {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-fav {
+    background-color: #000000;
+    padding: 10px;
+    flex: 50%;
+}
+
+.favanimatin {
+    font-size: 3rem;
+    text-align: center;
+
+    color: #cc185d;
+    letter-spacing: 1rem;
+    font-family: "Niconne", cursive;
+    font-weight: 900;
+    animation-name: examplefav;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    text-shadow: 5px 5px 0px #ff6586, 7px 7px 0px #6776ff, 8px 8px 0px #63ff6b, 9px 9px 0px #c11a2b, 10px 10px 0px #9273f6;
+}
+
+@keyframes examplefav {
+    0% {
+        color: #e72d5d;
+    }
+    20% {
+        color: rgb(250, 206, 8);
+    }
+    40% {
+        color: rgb(149, 74, 235);
+    }
+    60% {
+        color: rgb(81, 151, 207);
+    }
+    80% {
+        color: rgb(230, 54, 54);
+    }
+    90% {
+        color: rgb(123, 241, 76);
+    }
+    100% {
+        color: rgb(243, 139, 41);
+    }
+}
+
+/* -------------------------end favourite food head------------------------ */
+
+    /* --------------favourite food item sushi ------------------ */
+
+.flex-item-left-sushi-h1 {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-sushi-h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-sushi-h1:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #fffb00;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-sushi {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-sushi {
+    height: 20rem;
+}
+
+.image-fader-sushi img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+/* style the p tag contents in the favourite food sesstion */
+
+.PtagFood {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    font-family: "Architects Daughter";
+}
+
+   /* --------------favourite food item  PIZZA ------------------ */
+
+.flex-item-left-h1-pizza {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-pizza {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-pizza:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #fffb00;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-pizza {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-pizza {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-pizza{
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-pizza {
+    height: 20rem;
+}
+
+.image-fader-pizza img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+   /* --------------favourite food item  SANDWICHES ------------------ */
+
+
+.flex-item-left-h1-sandwiches {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-sandwiches {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-sandwiches:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #fffb00;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-sandwiches {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-sandwiches {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-sandwiches {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-sandwiches {
+    height: 20rem;
+}
+
+.image-fader-sandwiches img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+   /* --------------favourite food item  KEBABS ------------------ */
+
+.flex-item-left-h1-kebab {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-kebab {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-kebab:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #fffb00;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-kebab {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-kebab {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-kebab {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-kebab {
+    height: 20rem;
+}
+
+.image-fader-kebab img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+ /* --------------favourite food item  PASTA ------------------ */
+ 
+
+.flex-item-left-h1-Pasta {
+    padding: Pastapx;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-Pasta {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-Pasta:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #fffb00;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-Pasta {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-Pasta {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-Pasta {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-Pasta {
+    height: 20rem;
+}
+
+.image-fader-Pasta img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+   /* --------------favourite food item  HOT DOG ------------------ */
+
+.flex-item-left-h1-Hotdog {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-Hotdog {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-Hotdog:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #fffb00;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-Hotdog {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-Hotdog {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-Hotdog {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-Hotdog {
+    height: 20rem;
+}
+
+.image-fader-Hotdog img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+   /* --------------  Qote of George Bernard Shaw  ------------------ */
+
+.flex-container-quot {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+}
+.flex-item-left-h1-quot {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+
+    color: #222222;
+    letter-spacing: 0.5rem;
+
+  
+}
+.flex-item-left-h1-quot:hover {
+    font-weight: bold;
+    text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 3px;
+
+    color: #ffffff;
+    letter-spacing: 0.5rem;
+}
+
+.quotMan {
+    font-size: 1.4rem;
+}
+
+.quotNolove {
+    text-decoration: line-through;
+    color: #b33636;
+}
+.quotNolove:hover {
+    text-decoration: line-through;
+}
+
+.quotFoodYellow {
+    color: rgb(190, 190, 3);
+}
+
+/* -------------------------end quote--------------------- */
+
+/* ---------------------------     dosa start css     ------------------------------- */
+
+.flex-item-left-h1-dosa {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-dosa {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-dosa:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-dosa {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-dosa {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-dosa {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-dosa {
+    height: 20rem;
+}
+
+.image-fader-dosa img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+/* ---------------------------     dosa end css     ------------------------------- */
+
+/* ---------------------------     french toast start css     ------------------------------- */
+
+.flex-item-left-h1-French-toast {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-French-toast {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-French-toast:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #fffb00;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-French-toast {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-French-toast {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-French-toast {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-French-toast {
+    height: 20rem;
+}
+
+.image-fader-French-toast img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+/* ---------------------------    french toast end css     ------------------------------- */
+
+/* ---------------------------    noodle start css     ------------------------------- */
+
+.flex-item-left-h1-noodle {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-noodle {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-noodle:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-noodle {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-noodle {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-noodle {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-noodle {
+    height: 20rem;
+}
+
+.image-fader-noodle img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+/* ---------------------------    noodle end css     ------------------------------- */
+
+/* ---------------------------    steak  start css     ------------------------------- */
+
+.flex-item-left-h1-steak {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-steak {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-steak:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-steak {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-steak {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-steak {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-steak {
+    height: 20rem;
+}
+
+.image-fader-steak img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+/* ---------------------------    steak  end css     ------------------------------- */
+
+/* ---------------------------    mandhi start  css     ------------------------------- */
+
+.flex-item-left-h1-mandhi {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-mandhi {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-mandhi:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-mandhi {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-mandhi {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-mandhi {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-mandhi {
+    height: 20rem;
+}
+
+.image-fader-mandhi img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+/* ---------------------------  mandhi    end css     ------------------------------- */
+
+/* --------------------------- Confetti-cake  start   css     ------------------------------- */
+
+.flex-item-left-h1-Confetti-cake {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-Confetti-cake {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-Confetti-cake:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-Confetti-cake {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-Confetti-cake {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-Confetti-cake {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-Confetti-cake {
+    height: 20rem;
+}
+
+.image-fader-Confetti-cake img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+/* --------------------------- Confetti-cake  end   css     ------------------------------- */
+
+/* --------------------------- Chocolate-cakee start   css     ------------------------------- */
+
+.flex-item-left-h1-Chocolate-cake {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-Chocolate-cake {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-Chocolate-cake:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-Chocolate-cake {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-Chocolate-cake {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-Chocolate-cake {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-Chocolate-cake {
+    height: 20rem;
+}
+
+.image-fader-Chocolate-cake img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+/* ---------------------------Chocolate-cake end   css     ------------------------------- */
+
+/* --------------------------- MMcookie start   css     ------------------------------- */
+
+.flex-item-left-h1-MMcookie {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-MMcookie {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-MMcookie:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-MMcookie {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-MMcookie {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-MMcookie {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-MMcookie {
+    height: 20rem;
+}
+
+.image-fader-MMcookie img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+/* ---------------------------MMcookie end   css     ------------------------------- */
+
+/* --------------------------- sugar-cookie start   css     ------------------------------- */
+
+.flex-item-left-h1-sugar-cookie {
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+}
+
+.flex-item-left-h1-sugar-cookie {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f54100;
+    letter-spacing: 0.5rem;
+}
+.flex-item-left-h1-sugar-cookie:hover {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+    letter-spacing: 0.5rem;
+}
+
+.flex-container-sugar-cookie {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-sugar-cookie {
+    background-color: #000000;
+
+    flex: 55%;
+    height: 20rem;
+}
+.flex-item-right-sugar-cookie {
+    background-color: rgb(0, 0, 0);
+    flex: 45%;
+    height: 20rem;
+}
+.image-fader-sugar-cookie {
+    height: 20rem;
+}
+
+.image-fader-sugar-cookie img {
+    border-radius: 90px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 19rem;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: imagefade1;
+}
+
+/* ---------------------------sugar-cookie end   css     ------------------------------- */
+
+/* ---------------------------fooooter-----start------------------------- */
+.flex-item-left-h1-footer {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+    padding: 5px;
+    flex: 40%;
+    height: 3rem;
+    margin-bottom: 5rem;
+    color: #818181;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-item-left-h1-footer:hover {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Rampart One";
+
+    color: #f1f1f1;
+}
+
+.flex-container-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item-left-footer {
+    width: 100%;
+    height: 18rem;
+    background-color: rgb(0, 0, 0);
+}
+
+  /* foooter CONACT SCETION  */
+
+.footer-contact {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    padding-left: 10%;
+    font-family: "Baloo Tamma 2";
+    font-weight: 800;
+}
+
+.footer-contact:hover {
+    color: rgb(0, 192, 32);
+    font-size: 2.5rem;
+    padding-left: 10%;
+    font-family: "Baloo Tamma 2";
+    text-decoration: #ffffff line-through;
+}
+  /* foooter CONACT PHONE CALL  */
+
+
+.footer-tele {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding-left: 10%;
+    font-family: "Baloo Tamma 2";
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.footer-tele:hover {
+    color: rgb(0, 192, 32);
+    font-size: 1.5rem;
+    padding-left: 10%;
+    font-family: "Baloo Tamma 2";
+    text-decoration: #ffffff line-through;
+}
+
+  /* foooter CONACT EMAIL  */
+
+.footer-email {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding-left: 10%;
+    font-family: "Baloo Tamma 2";
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.footer-email:hover {
+    color: rgb(0, 192, 32);
+    font-size: 1.5rem;
+    padding-left: 10%;
+    font-family: "Baloo Tamma 2";
+    text-decoration: #ffffff line-through;
+}
+
+  /* foooter COPY RIGHT */
+
+.footer-copyright {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding-left: 10%;
+    margin-top: 0.1rem;
+    font-family: "Baloo Tamma 2";
+    font-weight: 200;
+    text-decoration: none;
+}
+  /* foooter TOP */
+
+
+.footer-top {
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    padding-left: 60%;
+    margin-top: 0rem;
+    font-family: "Baloo Tamma 2";
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.footer-Alink-top {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    font-family: "Baloo Tamma 2";
+    font-weight: 200;
+}
+.footer-Alink-top:hover {
+    text-decoration: line-through white;
+    color: rgb(5, 144, 0);
+    font-size: 1.7rem;
+    font-weight: 200;
+    font-family: "Baloo Tamma 2";
+}
+
+/* ----------------------------fooooter--- end--------------------------- */
+
+/* animation for desktop  are here . */
+
+@keyframes example {
+    0% {
+        background-color: rgb(47, 0, 255);
+    }
+    10% {
+        background-color: rgb(255, 124, 2);
+    }
+    20% {
+        background-color: rgb(255, 0, 0);
+    }
+    30% {
+        background-color: rgb(96, 22, 192);
+    }
+    40% {
+        background-color: rgb(234, 0, 255);
+    }
+    50% {
+        background-color: rgb(155, 255, 73);
+    }
+    60% {
+        background-color: rgb(0, 255, 191);
+    }
+    70% {
+        background-color: rgb(143, 0, 179);
+    }
+    80% {
+        background-color: rgb(218, 27, 128);
+    }
+    90% {
+        background-color: rgb(8, 113, 250);
+    }
+    100% {
+        background-color: rgb(18, 214, 27);
+    }
+}
+
+@keyframes exampleText {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    10% {
+        color: rgb(214, 104, 0);
+    }
+    20% {
+        color: rgb(255, 0, 0);
+    }
+    30% {
+        color: rgb(96, 22, 192);
+    }
+    40% {
+        color: rgb(234, 0, 255);
+    }
+    50% {
+        color: rgb(255, 238, 0);
+    }
+    60% {
+        color: rgb(0, 73, 55);
+    }
+    70% {
+        color: rgb(94, 0, 117);
+    }
+    80% {
+        color: rgb(218, 27, 128);
+    }
+    90% {
+        color: rgb(0, 49, 114);
+    }
+    100% {
+        color: rgb(0, 85, 4);
+    }
+}
+@keyframes LiveLoveEat {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    20% {
+        color: rgb(7, 7, 7);
+    }
+    30% {
+        color: rgb(39, 39, 39);
+    }
+    60% {
+        color: rgb(168, 168, 168);
+    }
+    85% {
+        color: rgb(219, 219, 219);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* media screen media screen media screen media screen media screen media screen media screen media screen media screen media screen  */
+ 
+/* ===================   mobile view    ======================== */
+
+
+@media (max-width: 500px) {
+    .flex-container-sushi,
+    .flex-container-pizza,
+    .flex-container-sandwiches,
+    .flex-container-kebab,
+    .flex-container-Pasta,
+    .flex-container-Hotdog,
+    .flex-container-dosa,
+    .flex-container-French-toast,
+    .flex-container-noodle,
+    .flex-container-steak,
+    .flex-container-mandhi,
+    .flex-container-Confetti-cake,
+    .flex-container-Chocolate-cake,
+    .flex-container-MMcookie,
+    .flex-container-sugar-cookie {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        zoom: 50%;
+    }
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .header {
+        width: 100%;
+        height: 8rem;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 1rem;
+    }
+
+    .letterF {
+        width: 3.7rem;
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+    }
+
+    .buttonImg {
+        display: none;
+    }
+    .subHeadSticky {
+        width: 100%;
+        height: 3rem;
+        background-color: #000000;
+        position: sticky;
+        margin-top: 0.5rem;
+    }
+
+    .TagHead {
+        width: 100%;
+        height: 5rem;
+        font-size: 1.5rem;
+        text-align: center;
+        word-spacing: 0.5rem;
+    }
+
+    .aTag {
+        text-decoration: none;
+        color: rgb(61, 61, 61);
+    }
+
+    .aTag:hover {
+        color: rgb(43, 255, 89);
+    }
+
+    /* parallel effect in body part */
+
+    .mouse_move {
+        width: 100%;
+        height: 25rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        cursor: url(parallel-img/eat.png), pointer;
+    }
+
+
+/* ------------------------------------ block images for   mobile screen --------------------------- */
+
+#img1 {
+display: none;
+}
+
+#img2 {
+    display: none;
+}
+#img3 {
+    display: none;
+}
+#img4 {
+    display: none;
+}
+
+#img5 {
+    display: none;
+}
+#img6 {
+    display: none;
+}
+#img7 {
+    display: none;
+}
+#img8 {
+    display: none;
+}
+#img9 {
+    display: none;
+}
+#img10 {
+    display: none;
+}
+#img11 {
+    display: none;
+}
+#img12 {
+    display: none;
+}
+#img13 {
+    display: none;
+}
+#img14 {
+    display: none;
+}
+#img15 {
+    display: none;
+}
+#img16 {
+    display: none;
+}
+
+/* ------------------------------------------end img block--------------------------------------- */
+
+    /* mediascreen ends ------  mediascreen ends  */
+
+    /* animation  mobile screen are here . */
+
+    @keyframes example {
+        0% {
+            background-color: rgb(47, 0, 255);
+        }
+        10% {
+            background-color: rgb(255, 124, 2);
+        }
+        20% {
+            background-color: rgb(255, 0, 0);
+        }
+        30% {
+            background-color: rgb(96, 22, 192);
+        }
+        40% {
+            background-color: rgb(234, 0, 255);
+        }
+        50% {
+            background-color: rgb(155, 255, 73);
+        }
+        60% {
+            background-color: rgb(0, 255, 191);
+        }
+        70% {
+            background-color: rgb(143, 0, 179);
+        }
+        80% {
+            background-color: rgb(218, 27, 128);
+        }
+        90% {
+            background-color: rgb(8, 113, 250);
+        }
+        100% {
+            background-color: rgb(18, 214, 27);
+        }
+    }
+
+    @keyframes exampleText {
+        0% {
+            color: rgb(0, 0, 0);
+        }
+        10% {
+            color: rgb(214, 104, 0);
+        }
+        20% {
+            color: rgb(255, 0, 0);
+        }
+        30% {
+            color: rgb(96, 22, 192);
+        }
+        40% {
+            color: rgb(234, 0, 255);
+        }
+        50% {
+            color: rgb(255, 238, 0);
+        }
+        60% {
+            color: rgb(0, 73, 55);
+        }
+        70% {
+            color: rgb(94, 0, 117);
+        }
+        80% {
+            color: rgb(218, 27, 128);
+        }
+        90% {
+            color: rgb(0, 49, 114);
+        }
+        100% {
+            color: rgb(0, 85, 4);
+        }
+    }
+    @keyframes LiveLoveEat {
+        0% {
+            color: rgb(0, 0, 0);
+        }
+        20% {
+            color: rgb(7, 7, 7);
+        }
+        30% {
+            color: rgb(39, 39, 39);
+        }
+        60% {
+            color: rgb(168, 168, 168);
+        }
+        85% {
+            color: rgb(219, 219, 219);
+        }
+        100% {
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+  
+
+/* -----------------final end  -------------------- */

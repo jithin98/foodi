@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodi</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="shortcut icon" href="img/foodieTitileIcon.png" type="image/x-icon">
+
+    <link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rampart One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Inline' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Tamma 2' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
+
+    <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase.js"></script>
+    <scrip src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"></script>
+</head>
+
+
+
+<body>
+    <!-- header section start -->
+    <div class="header" id="tophead">
+
+        <!-- logo letter F start -->
+
+        <div class="letterF">
+            <div class="letterFdiv1"></div>
+            <div class="letterFs1"></div>
+            <div class="letterFdiv2"></div>
+            <div class="letterFdiv3"></div>
+            <div class="letterFs2"></div>
+            <div class="letterFdiv4"></div>
+            <div class="letterFdiv5"></div>
+            <div class="letterFdiv6"></div>
+        </div class="letterF">
+        <!-- logo letter F end -->
+
+        <!-- logo letter O and O start -->
+
+        <div class="letterOdiv1">
+            <div class="outer1">
+                <div class="innerOletter"></div>
+            </div>
+        </div class="letterOdiv1">
+
+        <div class="letterOdiv2">
+            <div class="outer2">
+                <div class="innerOletter"></div>
+            </div>
+        </div class="letterOdiv2">
+
+        <!-- logo letter O O end -->
+
+        <!-- logo letter D start -->
+
+        <div class="letterDmain">
+
+            <div class="letterDPart1">
+                <div class="letterDpart1sub">
+                    <div class="zero" id="p2"></div>
+                </div>
+            </div>
+            <div class="letterDPart2">
+                <div class="letterD2"></div>
+                <div class="letterD3"></div>
+                <div class="letterD4"></div>
+                <div class="letterD5"></div>
+                <div class="letterD6"></div>
+                <div class="letterD7"></div>
+            </div>
+        </div class="letterDmain">
+
+        <!-- logo letter D end -->
+
+        <!-- logo letter I start -->
+
+        <div class="letterI">
+            <div class="dot">
+            </div>
+
+            <div class="partI">
+                <div class="i1"></div>
+                <div class="i2"></div>
+                <div class="i3"></div>
+                <div class="i4"></div>
+            </div>
+        </div>
+        <!-- logo letter I end -->
+
+        <!-- heading buttons  start full screen and chat pop and website link -->
+
+        <div class="headerbutton">
+            <button class="open-button1" onclick=" playAudio(); openFullscreen(); closeFullscreen();">
+                <img class="buttonImg" src="img/full.png" alt="full mode">
+            </button>
+        </div>
+        <audio id="fullscreenAudio">
+            <source src="sound/multimedia_rollover_038.ogg" type="audio/ogg">
+        </audio>
+                    <!-- chat icon button and img -->
+        <button class="open-button2" onclick=" playAudio(); openForm();">
+            <img class="buttonImg" src="img/chaticon.png" alt=" chat box">
+        </button>
+                    <!-- github icon button and img -->
+        <button class="open-button3" onclick=" playAudio();">
+            <a href="https://github.com/jithin98" target="_blank"><img class="buttonImg" src="img/git.png"
+                    alt="link git hub"></a>
+        </button>
+                    <!-- linkedin icon button and img -->
+        <button class="open-button4" onclick=" playAudio();">
+            <a href="https://www.linkedin.com/in/jithin-puthoorkaran-7123b717b/" target="_blank"><img class="buttonImg"
+                    src="img/linkedin.png" alt="link linkedin"></a>
+        </button>
+                            <!-- behance icon button and img -->
+        <button class="open-button5" onclick=" playAudio();">
+            <a href="https://www.behance.net/jithinputhoor" target="_blank"><img class="buttonImg" src="img/behance.png"
+                    alt="link behance "></a>
+        </button>
+                             <!-- dribble  icon button and img -->
+        <button class="open-button5" onclick=" playAudio();">
+            <a href="https://dribbble.com/jithin_98" target="_blank"><img class="buttonImg" src="img/dribbble.png"
+                    alt="link dribble"></a>
+        </button>
+                           <!-- open chat box container open -->
+        <div class="chat-popup" id="myForm">
+            <form class="form-container" id=".form-containe">
+
+                <textarea type="text" placeholder=" @name ->message😄" name="name" id="name" required></textarea>
+                <button type="submit" class="btn"  onclick=" playAudio2();">SHOT</button>
+                <audio id="shoot">
+                    <source src="sound/shot.ogg" type="audio/ogg">
+                </audio>
+
+                <button type="button" class="btncancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <!-- heading buttons  ended full screen and chat pop -->
+
+    </div class="header">
+
+
+                     header section end end end
+
+ <!-- *************************************************************************************************************************           -->
+
+    <!-- hr tag -->
+
+    <div class=head_HR_Tag>
+        <hr>
+
+    </div>
+
+    <!-- body section contents starts here -->
+
+    <div class="parentBody">
+
+        <!-- body sub heading start -->
+        <div class="subHeadSticky">
+            <div class="TagHead">
+                <a class="aTag" href="#fav">#favourite</a>
+                <a class="aTag" href="#Breakfast">#Breakfast</a>
+                <a class="aTag" href="#main">#main</a>
+                <a class="aTag" href="#cake">#cake</a>
+                <a class="aTag" href="#cookie">#cookie</a>
+
+            </div>
+            <!-- parallel effect section "live.love.eat" start -->
+
+            <div class="mouse_move">
+                   
+
+                <h1 class="mouse" value="10"> 
+                    <!-- text live css style write as inline property -->
+                <span style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">L</span>IVE 
+            <br>
+             <!-- text love -->
+             L<span style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">O</span>VE 
+            <br>
+             <!-- text eat -->
+             EA<span style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">T</span></h1>
+
+            <!-- parallel effect images (14 no) -->
+
+                 <img id="img1" src="parallel-img/2.png"
+            class="mouse" value="-10" />
+
+            <img id="img2" src="parallel-img/2.png"
+            class="mouse" value="50" />
+
+              <img id="img3" src="parallel-img/4.png"
+            class="mouse" value="-9" />
+
+                <img id="img4" src="parallel-img/6.png" class="mouse" value="17" />
+
+            <img id="img5" src="parallel-img/9.png"
+            class="mouse" value="-7" />
+
+
+             <img id="img6" src="parallel-img/1.png"
+            class="mouse" value="10" />
+
+            <img id="img7" src="parallel-img/5.png"
+            class="mouse" value="-16" />
+
+
+         <img id="img8" src="parallel-img/7.png"
+            class="mouse" value="-20" />
+
+            <img id="img9" src="parallel-img/10.png"
+            class="mouse" value="22" />
+
+
+            <img id="img10" src="parallel-img/13.png"
+            class="mouse" value="20" />
+            <img id="img11" src="parallel-img/16.png"
+            class="mouse" value="-20" />
+
+
+
+         <img id="img12" src="parallel-img/14.png"
+            class="mouse" value="-13" />
+            <img id="img13" src="parallel-img/17.png"
+            class="mouse" value="22" />
+
+
+         <img id="img14" src="parallel-img/20.png"
+            class="mouse" value="-10" />
+            </div>
+              <!-- parallel effect section end -->
+<!-- *********************************************************************************************************************************     -->
+               <!-- FAVOURITE SECTION START ---->
+              <!-- favourite food head h1 -->
+            <div class="flex-container-fav">
+                <div class="flex-item-fav">
+                    <h1 class="flex-item-fav-h1">
+                        <p class=favanimatin id="fav"> favourite foods </p>
+                    </h1>
+                </div>
+            </div>
+
+            <br> <br>
+                          <!-- item 1  SUSHI -->
+            <div class="flex-container-sushi">
+                <div class="flex-item-left-sushi-h1">#SUSHI</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-sushi">
+                <div class="flex-item-left">
+                    <div class="image-fader-sushi">
+                        <img src="fav/susi/3.png" />
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65)">Sushi
+                        </span> is a traditional Japanese dish of prepared vinegared rice, usually
+                        with some sugar and salt, accompanied by a variety of ingredients, such as seafood, often raw,
+                        and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is
+                        <span style="color: rgb(26, 207, 65);">"sushi
+                            rice"</span> also referred to as shari, or sumeshi.
+                    </p>
+                </div>
+            </div>
+            <br><br> <br>
+
+                    <!-- item 2  PIZZA -->
+
+            <div class="flex-container-pizza">
+                <div class="flex-item-left-h1-pizza">#PIZZA</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-pizza">
+                <div class="flex-item-right-pizza">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65);">Pizza.</span> is a dish of Italian origin
+                        consisting of a usually round, flat base of
+                        leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients,
+                        which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is
+                        sometimes called a <span style="color: rgb(26, 207, 65);">pizzetta.</span></p>
+                </div>
+                <div class="flex-item-left-pizza">
+                    <div class="image-fader-pizza">
+                        <img src="fav/piza/pizza.jpg" />
+                    </div>
+                </div>
+            </div>
+            <br><br> <br>
+                         <!-- item 3  SANDWICHES -->
+            <div class="flex-container-sandwiches">
+                <div class="flex-item-left-h1-sandwiches">#SANDWICHES</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-sandwiches">
+                <div class="flex-item-left-sandwiches">
+                    <div class="image-fader-sandwiches">
+                        <img src="fav/sandvwitch/sendvich.jpg" />
+                    </div>
+                </div>
+                <div class="flex-item-right-sandwiches">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65);">Sandwiches</span> are a popular type of
+                        lunch food, taken to work, school, or picnics
+                        to be eaten as part of a packed lunch. The bread may be plain or be coated with condiments, such
+                        as mayonnaise or mustard, to enhance its flavour and texture. As well as being homemade,
+                        sandwiches are also widely sold in various retail outlets and can be served hot or cold.
+                    </p>
+                </div>
+            </div>
+            <br><br> <br>
+                           <!-- item 4  KEBABS -->
+            <br>
+            <br>
+            <div class="flex-container-kebab">
+                <div class="flex-item-left-h1-kebab">#KEBABS</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-kebab">
+                <div class="flex-item-right-kebab">
+                    <p class="PtagFood"> <span style="color: rgb(26, 207, 65);">kebab.</span> Kebabs consist of cut up
+                        or ground meat, sometimes with vegetables, and various
+                        other accompaniments according to the specific recipe. Although kebabs are typically cooked on a
+                        skewer over a fire, some kebab dishes are baked in a pan in an oven or prepared as a stew such
+                        as <span style="color: rgb(26, 207, 65);">tas kebab.</span>
+                    </p>
+                </div>
+                <div class="flex-item-left-kebab">
+                    <div class="image-fader-kebab">
+                        <img src="fav/kebab/kabab.jpg" />
+                    </div>
+                </div>
+            </div>
+            <br><br> <br>
+          
+
+                     <!-- item 5  PASTA -->
+            <div class="flex-container-Pasta">
+                <div class="flex-item-left-h1-Pasta">#PASTA </div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-Pasta">
+                <div class="flex-item-left-Pasta">
+                    <div class="image-fader-Pasta">
+                        <img src="fav/pasta/pasta.jpg" />
+                    </div>
+                </div>
+                <div class="flex-item-right-Pasta">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65);">Pasta</span> is a type
+                        of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and
+                        formed into sheets then cooked by boiling or baking. Rice flour,
+                        such as beans , are sometimes used in place of wheat flour to yield a different taste
+                        and texture. Pasta is a staple food of <span style="color: rgb(26, 207, 65);">Italian
+                        cuisine.</span>
+                    </p>
+                </div>
+            </div>
+            <br><br> <br>
+       
+
+                    <!-- item 6  HOT DOG -->
+
+            <div class="flex-container-Hotdog">
+                <div class="flex-item-left-h1-Hotdog">#HOT DOG</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-Hotdog">
+                <div class="flex-item-right-Hotdog">
+                    <p class="PtagFood">A<span style="color: rgb(26, 207, 65);"> Hot dog</span> A hot dog is a dish
+                        consisting of a grilled or steamed sausage served in the slit of a partially sliced bun. The
+                        term hot dog can also refer to the sausage itself. The sausage used is a wiener or a
+                        frankfurter. The names of these sausages also commonly refer to their assembled dish.</p>
+                </div>
+                <div class="flex-item-left-Hotdog">
+                    <div class="image-fader-Hotdog">
+                        <img src="fav/hotdog/hotdog.jpg" />
+                    </div>
+                </div>
+            </div>
+            <br><br> <br>
+
+        
+            <!-- FAVOURITE SECTION END ---->
+
+            <!-- quote  food start -->
+            <br> <br> <br> <br>
+            <div class="flex-container-quot">
+                <div class="flex-item-left-h1-quot">
+                    “There is <span class="quotNolove"> no love</span> sincerer <br> than the love of <span
+                        class="quotFoodYellow">food</span> "
+                    <span class="quotMan"> <br> ― George Bernard Shaw</span>
+                </div>
+            </div>
+            <br> <br>
+            <!-- quote  food end -->
+
+
+            <!-- ///////////////////////breakfasst  start items ///////////////////// -->
+
+            <!-- ---------------   item Breakfast 1 FRENCH TOAST ------------------------- -->
+            <br>
+            <br>
+            <div class="flex-container-French-toast" id="Breakfast">
+                <div class="flex-item-left-h1-French-toast">#FRENCH TOAST</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-French-toast">
+             <div class="flex-item-right-French-toast">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65);">French toast.</span> is a dish made of
+                        sliced bread soaked in beaten eggs and typically milk, then pan fried. Alternative names and
+                        variants include "eggy bread", "Bombay toast", "gypsy toast", and "poor knights"
+                </div>
+                <div class="flex-item-left-French-toast">
+                    <div class="image-fader-French-toast">
+                        <img src="breakfast/french-toast.jpg" />
+                    </div>
+                </div>
+            </div>
+            <br><br> <br>
+
+            <!-- ---------------   item Breakfast 2 MASALA DOSA  ------------------------- -->
+
+            <div class="flex-container-dosa">
+                <div class="flex-item-left-h1-dosa">#MASALA DOSA</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-dosa">
+                <div class="flex-item-left-dosa">
+                    <div class="image-fader-dosa">
+                        <img src="breakfast/dosa.jpg" />
+
+                    </div>
+                </div>
+                <div class="flex-item-right-dosa">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65)"> Masala dosa
+                        </span> is a variation of the popular South Indian dosa, which has its origins in Tuluva Udupi
+                        cuisine of Karnataka and Malabar Cuisine of Kerala. It is made from rice, lentils, potato,
+                        fenugreek, ghee and curry leaves, and served with chutneys and sambar.
+                    </p>
+                </div>
+            </div>
+            <br><br> <br>
+
+            <!-- ---------------   item Breakfast 3  NOODLE ------------------------- -->
+
+
+            <div class="flex-container-noodle">
+                <div class="flex-item-left-h1-noodle">#NOODLES</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-noodle">
+                <div class="flex-item-right-noodle">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65);">Noodles</span>
+                        are a type of food made from unleavened dough which is rolled flat and cut, stretched or
+                        extruded, into long strips or strings. Noodles can be refrigerated for short-term storage or
+                        dried and stored for future use. Noodles are usually cooked in boiling water, sometimes with
+                        cooking oil or salt added.
+                    </p>
+                </div>
+                <div class="flex-item-left-noodle">
+                    <div class="image-fader-noodle">
+                        <img src="breakfast/noodle.jpg" />
+                    </div>
+                </div>
+              </div>
+            <br><br> <br>
+
+            <!-- -------------------------   main course START --------------------- -->
+
+            <!-- ---------------   item Main 1 BEEF STEAK ------------------------- -->
+            <br>
+            <br>
+            <div class="flex-container-steak" id="main">
+                <div class="flex-item-left-h1-steak">#BEEF STEAK</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-steak">
+                <div class="flex-item-right-steak">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65);">beef steak</span> , often called just
+                        steak, is a flat cut of beef with parallel faces, usually cut perpendicular to the muscle
+                        fibers. In common restaurant service a single serving has a raw mass ranging from 120 to 600
+                        grams. Beef steaks are usually grilled, pan-fried, or broiled
+                </div>
+                <div class="flex-item-left-steak">
+                    <div class="image-fader-steak">
+                        <img src="main/our-12kg-tomahawk-mesquite.jpg" />
+                    </div>
+                </div>
+            </div>
+            <br><br> <br>
+
+          <!-- ---------------   item Main 2 FISH MANDHI ------------------------- -->
+            <div class="flex-container-mandhi">
+                <div class="flex-item-left-h1-mandhi">#FISH MANDHI</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-mandhi">
+                <div class="flex-item-left-mandhi">
+                    <div class="image-fader-mandhi">
+                      <img src="main/King-Fish-Grilled-Rice.jpg" />
+                    </div>
+                </div>
+                <div class="flex-item-right-mandhi">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65)">Mandi </span> was usually made from rice,
+                        meat (lamb, camel, goat or chicken), and a mixture of spices called hawaij. The meat used is
+                        usually a young and small sized lamb to enhance the taste further.
+                        The main technique which differentiates mandi from other meat dishes is that the meat is cooked
+                        in the tandoor
+                    </p>
+                </div>
+            </div>
+            <br><br> <br>
+
+            <!-- ------------------------------ main course end ------------------- -->
+
+
+            <!-- -------------------------------   cake start     ------------------------ -->
+
+            <!-- ---------------   item CAKE 1 CONFETTI CAKE  ------------------------- -->
+            <div class="flex-container-Confetti-cake" id="cake">
+                <div class="flex-item-left-h1-Confetti-cake"># CONFETTI CAKE</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-Confetti-cake">
+                <div class="flex-item-right-Confetti-cake">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65);">Confetti cake</span> is a type of cake
+                        that has rainbow colored sprinkles baked into the batter. It is called confetti cake because
+                        when baked, the rainbow sprinkles melt into dots of bright color that resemble confetti. </p>
+                </div>
+                <div class="flex-item-left-Confetti-cake">
+                    <div class="image-fader-Confetti-cake">
+                        <img src="cake/funfetti-ice-cream-cake-FEAT-1200x800.jpg" />
+                    </div>
+                </div>
+            </div>
+            <br><br> <br>
+
+
+            <!-- ---------------   item CAKE 1 CHOCALATE  CAKE  ------------------------- -->
+            <div class="flex-container-Chocolate-cake">
+                <div class="flex-item-left-h1-Chocolate-cake">#CHOCOLATE CAKE</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-Chocolate-cake">
+                <div class="flex-item-left-Chocolate-cake">
+                    <div class="image-fader-Chocolate-cake">
+                        <img src="cake/chocolate-sheet-cake-5-660x880.jpg" />
+                    </div>
+                </div>
+                <div class="flex-item-right-Chocolate-cake">
+                    <p class="PtagFood"><span style="color: rgb(26, 207, 65);">Chocolate cake </span>is a cake flavored
+                        with melted chocolate, cocoa powder, or both.Chocolate cake is made with chocolate. It can also
+                        include other ingredients.These include fudge, vanilla creme, and other sweeteners.
+                    </p>
+                </div>
+            </div>
+            <br><br> <br>
+            <!-- -------------------------------   cake end     ------------------------ -->
+
+            <!-- -------------------------------   cookie start     ------------------------ -->
+
+            <!-- ---------------   item COOKIE 1 M&M COOKIE  ------------------------- -->
+
+            <br>
+            <br>
+            <div class="flex-container-MMcookie" id="cookie">
+                <div class="flex-item-left-h1-MMcookie">#M&M COOKIE</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-MMcookie">
+            <div class="flex-item-right-MMcookie">
+                    <p class="PtagFood">They named the candy M&M, which stood for <span
+                            style="color: rgb(26, 207, 65);"> “Mars & Murrie”</span> The deal gave Murrie
+                        a 20% stake in the candy, but this stake was later bought out by Mars when chocolate rationing
+                        ended at the end of the war in 1948.
+                        as
+                    </p>
+                </div>
+                <div class="flex-item-left-MMcookie">
+                    <div class="image-fader-MMcookie">
+                        <img src="cookie/IMG_7912.jpg" />
+                    </div>
+                </div>
+            </div>
+            <br><br> <br>
+
+               <!-- ---------------   item COOKIE 1 SUGAR  COOKIE  ------------------------- -->
+
+
+            <div class="flex-container-sugar-cookie">
+                <div class="flex-item-left-h1-sugar-cookie">#SUGAR COOKIE</div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-sugar-cookie">
+                    <div class="flex-item-left-sugar-cookie">
+                    <div class="image-fader-sugar-cookie">
+                        <img src="cookie/gluten-free-vegan-frosted-sugar-cookies1.jpg" />
+                    </div>
+                </div>
+                <div class="flex-item-right-sugar-cookie">
+                    <p class="PtagFood">A <span style="color: rgb(26, 207, 65);">sugar cookie</span> is a cookie with
+                        the main ingredients being sugar, flour, butter, eggs, vanilla, and either baking powder or
+                        baking soda. Sugar cookies may be formed by hand, dropped, or rolled and cut into shapes. They
+                        are commonly decorated with additional sugar, icing, sprinkles, or a combination of these.
+                    </p>
+                </div>
+            </div>
+            <br><br> <br>
+
+            <!-- -------------------------------   cookie   end     ------------------------ -->
+
+<!-- ****************************************************************************************************** -->
+
+            <!-- ---------------------------  start    FOOOOTER   ---------------------- -->
+
+            <br><br> <br>
+            <div class="flex-container-footer">
+                <div class="flex-item-left-h1-footer">"To eat is a necessity, but to eat intelligently is an art."
+                </div>
+            </div>
+            <br> <br> <br><br>
+            <div class="flex-container-footer">
+                <div class="flex-item-left-footer">
+                    <P class="footer-contact">CONTACT</P>
+                    <br>
+                    <a href="tel:8943793274" class="footer-tele">call  &nbsp; &nbsp; &nbsp; &nbsp; ON</a>.
+                    <br>
+                    <a href="mailto:jithinputhoorkaran@gmail.com" class="footer-email"> email  &nbsp; &nbsp;  ON </a>
+                    <br>
+                    <P class="footer-copyright">Copyright &copy; Foodi.git 2021 <span class="footer-top"> <a
+                                class="footer-Alink-top" href="#tophead">Top</a></span></P>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------  END      FOOOOTER   ---------------------- -->
+
+     </div class="parentBody">
+     <script src="main.js"></script>
+     <script src="firebase.js"></script>
+</body>
+</html>

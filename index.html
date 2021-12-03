@@ -2,6 +2,7 @@
 
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,8 @@
     <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
 
     <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase.js"></script>
-    <scrip src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"></script>
+    <scrip src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js">
+        </script>
 </head>
 
 
@@ -97,47 +99,45 @@
 
         <!-- heading buttons  start full screen and chat pop and website link -->
 
-        <div class="headerbutton">
-            <button class="open-button1" onclick=" playAudio(); openFullscreen(); closeFullscreen();">
-                <img class="buttonImg" src="img/full.png" alt="full mode">
-            </button>
-        </div>
+
+        <button class="open-button1" onclick=" playAudio(); openFullscreen(); closeFullscreen();">
+            <img class="buttonImg" src="img/full.png" alt="full mode">
+        </button>
+
         <audio id="fullscreenAudio">
             <source src="sound/multimedia_rollover_038.ogg" type="audio/ogg">
         </audio>
-                    <!-- chat icon button and img -->
+        <!-- chat icon button and img -->
         <button class="open-button2" onclick=" playAudio(); openForm();">
             <img class="buttonImg" src="img/chaticon.png" alt=" chat box">
         </button>
-                    <!-- github icon button and img -->
+        <!-- github icon button and img -->
         <button class="open-button3" onclick=" playAudio();">
             <a href="https://github.com/jithin98" target="_blank"><img class="buttonImg" src="img/git.png"
                     alt="link git hub"></a>
         </button>
-                    <!-- linkedin icon button and img -->
+        <!-- linkedin icon button and img -->
         <button class="open-button4" onclick=" playAudio();">
             <a href="https://www.linkedin.com/in/jithin-puthoorkaran-7123b717b/" target="_blank"><img class="buttonImg"
                     src="img/linkedin.png" alt="link linkedin"></a>
         </button>
-                            <!-- behance icon button and img -->
+        <!-- behance icon button and img -->
         <button class="open-button5" onclick=" playAudio();">
             <a href="https://www.behance.net/jithinputhoor" target="_blank"><img class="buttonImg" src="img/behance.png"
                     alt="link behance "></a>
         </button>
-                             <!-- dribble  icon button and img -->
+        <!-- dribble  icon button and img -->
         <button class="open-button5" onclick=" playAudio();">
             <a href="https://dribbble.com/jithin_98" target="_blank"><img class="buttonImg" src="img/dribbble.png"
                     alt="link dribble"></a>
         </button>
-                           <!-- open chat box container open -->
+        <!-- open chat box container open -->
         <div class="chat-popup" id="myForm">
             <form class="form-container" id=".form-containe">
 
                 <textarea type="text" placeholder=" @name ->message😄" name="name" id="name" required></textarea>
-                <button type="submit" class="btn"  onclick=" playAudio2();">SHOT</button>
-                <audio id="shoot">
-                    <source src="sound/shot.ogg" type="audio/ogg">
-                </audio>
+                <button type="submit" class="btn" onclick=" playAudio2();">Shot</button>
+
 
                 <button type="button" class="btncancel" onclick="closeForm()">Close</button>
             </form>
@@ -148,9 +148,9 @@
     </div class="header">
 
 
-                    
+    <!-- header section end end end -->
 
- <!-- ***************************************     header section end    ********************************************* -->
+    <!-- *************************************************************************************************************************           -->
 
     <!-- hr tag -->
 
@@ -176,69 +176,61 @@
             <!-- parallel effect section "live.love.eat" start -->
 
             <div class="mouse_move">
-                   
 
-                <h1 class="mouse" value="10"> 
+
+                <h1 class="mouse" value="10">
                     <!-- text live css style write as inline property -->
-                <span style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">L</span>IVE 
-            <br>
-             <!-- text love -->
-             L<span style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">O</span>VE 
-            <br>
-             <!-- text eat -->
-             EA<span style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">T</span></h1>
+                    <span
+                        style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">L</span>IVE
+                    <br>
+                    <!-- text love -->
+                    L<span
+                        style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">O</span>VE
+                    <br>
+                    <!-- text eat -->
+                    EA<span
+                        style="color:rgb(255, 238, 0); animation-name: LiveLoveEat; animation-duration: 3s;">T</span>
+                </h1>
 
-            <!-- parallel effect images (14 no) -->
+                <!-- parallel effect images (14 no) -->
 
-                 <img id="img1" src="parallel-img/2.png"
-            class="mouse" value="-10" />
+                <img id="img1" src="parallel-img/2.png" class="mouse" value="-10" />
 
-            <img id="img2" src="parallel-img/2.png"
-            class="mouse" value="50" />
+                <img id="img2" src="parallel-img/2.png" class="mouse" value="50" />
 
-              <img id="img3" src="parallel-img/4.png"
-            class="mouse" value="-9" />
+                <img id="img3" src="parallel-img/4.png" class="mouse" value="-9" />
 
                 <img id="img4" src="parallel-img/6.png" class="mouse" value="17" />
 
-            <img id="img5" src="parallel-img/9.png"
-            class="mouse" value="-7" />
+                <img id="img5" src="parallel-img/9.png" class="mouse" value="-7" />
 
 
-             <img id="img6" src="parallel-img/1.png"
-            class="mouse" value="10" />
+                <img id="img6" src="parallel-img/1.png" class="mouse" value="10" />
 
-            <img id="img7" src="parallel-img/5.png"
-            class="mouse" value="-16" />
+                <img id="img7" src="parallel-img/5.png" class="mouse" value="-16" />
 
 
-         <img id="img8" src="parallel-img/7.png"
-            class="mouse" value="-20" />
+                <img id="img8" src="parallel-img/7.png" class="mouse" value="-20" />
 
-            <img id="img9" src="parallel-img/10.png"
-            class="mouse" value="22" />
+                <img id="img9" src="parallel-img/10.png" class="mouse" value="22" />
 
 
-            <img id="img10" src="parallel-img/13.png"
-            class="mouse" value="20" />
-            <img id="img11" src="parallel-img/16.png"
-            class="mouse" value="-20" />
+                <img id="img10" src="parallel-img/13.png" class="mouse" value="20" />
+                <img id="img11" src="parallel-img/16.png" class="mouse" value="-20" />
 
 
 
-         <img id="img12" src="parallel-img/14.png"
-            class="mouse" value="-13" />
-            <img id="img13" src="parallel-img/17.png"
-            class="mouse" value="22" />
+                <img id="img12" src="parallel-img/14.png" class="mouse" value="-13" />
+                <img id="img13" src="parallel-img/17.png" class="mouse" value="22" />
 
 
-         <img id="img14" src="parallel-img/20.png"
-            class="mouse" value="-10" />
+                <img id="img14" src="parallel-img/20.png" class="mouse" value="-10" />
             </div>
-              <!-- parallel effect section end -->
-<!-- *********************************************************************************************************************************     -->
-               <!-- FAVOURITE SECTION START ---->
-              <!-- favourite food head h1 -->
+            <!-- parallel effect section end -->
+            <!-- *********************************************************************************************************************************     -->
+            <!-- FAVOURITE SECTION START ---->
+            <!-- favourite food head h1 -->
+            <br> <br> <br> <br> <br>
             <div class="flex-container-fav">
                 <div class="flex-item-fav">
                     <h1 class="flex-item-fav-h1">
@@ -247,8 +239,8 @@
                 </div>
             </div>
 
-            <br> <br>
-                          <!-- item 1  SUSHI -->
+            <br> <br> <br> <br> <br>
+            <!-- item 1  SUSHI -->
             <div class="flex-container-sushi">
                 <div class="flex-item-left-sushi-h1">#SUSHI</div>
             </div>
@@ -269,9 +261,9 @@
                     </p>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
-                    <!-- item 2  PIZZA -->
+            <!-- item 2  PIZZA -->
 
             <div class="flex-container-pizza">
                 <div class="flex-item-left-h1-pizza">#PIZZA</div>
@@ -291,8 +283,9 @@
                     </div>
                 </div>
             </div>
-            <br><br> <br>
-                         <!-- item 3  SANDWICHES -->
+            <br><br> <br><br><br><br><br><br><br><br>
+
+            <!-- item 3  SANDWICHES -->
             <div class="flex-container-sandwiches">
                 <div class="flex-item-left-h1-sandwiches">#SANDWICHES</div>
             </div>
@@ -312,8 +305,8 @@
                     </p>
                 </div>
             </div>
-            <br><br> <br>
-                           <!-- item 4  KEBABS -->
+            <br><br> <br><br><br><br><br><br><br><br>
+            <!-- item 4  KEBABS -->
             <br>
             <br>
             <div class="flex-container-kebab">
@@ -335,10 +328,10 @@
                     </div>
                 </div>
             </div>
-            <br><br> <br>
-          
+            <br><br> <br><br><br><br><br><br><br><br>
 
-                     <!-- item 5  PASTA -->
+
+            <!-- item 5  PASTA -->
             <div class="flex-container-Pasta">
                 <div class="flex-item-left-h1-Pasta">#PASTA </div>
             </div>
@@ -355,14 +348,14 @@
                         formed into sheets then cooked by boiling or baking. Rice flour,
                         such as beans , are sometimes used in place of wheat flour to yield a different taste
                         and texture. Pasta is a staple food of <span style="color: rgb(26, 207, 65);">Italian
-                        cuisine.</span>
+                            cuisine.</span>
                     </p>
                 </div>
             </div>
-            <br><br> <br>
-       
+            <br><br> <br><br><br><br><br><br><br><br>
 
-                    <!-- item 6  HOT DOG -->
+
+            <!-- item 6  HOT DOG -->
 
             <div class="flex-container-Hotdog">
                 <div class="flex-item-left-h1-Hotdog">#HOT DOG</div>
@@ -381,13 +374,13 @@
                     </div>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
-        
+
             <!-- FAVOURITE SECTION END ---->
 
             <!-- quote  food start -->
-            <br> <br> <br> <br>
+            <br> <br>
             <div class="flex-container-quot">
                 <div class="flex-item-left-h1-quot">
                     “There is <span class="quotNolove"> no love</span> sincerer <br> than the love of <span
@@ -395,21 +388,32 @@
                     <span class="quotMan"> <br> ― George Bernard Shaw</span>
                 </div>
             </div>
-            <br> <br>
+            <br><br>
             <!-- quote  food end -->
 
 
             <!-- ///////////////////////breakfasst  start items ///////////////////// -->
+            <!-- break fast head h1 -->
+            <!-- same css class in the favourites -->
+            <br> <br> <br>
+            <div class="flex-container-fav" id="Breakfast">
+                <div class="flex-item-fav">
+                    <h1 class="flex-item-fav-h1">
+                        <p class=favanimatin id="fav"> break fast</p>
+                    </h1>
+                </div>
+            </div>
 
+            <br> <br>
             <!-- ---------------   item Breakfast 1 FRENCH TOAST ------------------------- -->
             <br>
             <br>
-            <div class="flex-container-French-toast" id="Breakfast">
+            <div class="flex-container-French-toast">
                 <div class="flex-item-left-h1-French-toast">#FRENCH TOAST</div>
             </div>
             <br> <br> <br><br>
             <div class="flex-container-French-toast">
-             <div class="flex-item-right-French-toast">
+                <div class="flex-item-right-French-toast">
                     <p class="PtagFood"><span style="color: rgb(26, 207, 65);">French toast.</span> is a dish made of
                         sliced bread soaked in beaten eggs and typically milk, then pan fried. Alternative names and
                         variants include "eggy bread", "Bombay toast", "gypsy toast", and "poor knights"
@@ -420,7 +424,7 @@
                     </div>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
             <!-- ---------------   item Breakfast 2 MASALA DOSA  ------------------------- -->
 
@@ -443,7 +447,7 @@
                     </p>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
             <!-- ---------------   item Breakfast 3  NOODLE ------------------------- -->
 
@@ -466,15 +470,26 @@
                         <img src="breakfast/noodle.jpg" />
                     </div>
                 </div>
-              </div>
-            <br><br> <br>
+            </div>
+            <br><br> <br><br><br><br><br><br><br><br>
 
             <!-- -------------------------   main course START --------------------- -->
+            <!-- main head h1 -->
+            <!-- same css class in the favourites -->
+            <br> <br> <br>
+            <div class="flex-container-fav" id="main">
+                <div class="flex-item-fav">
+                    <h1 class="flex-item-fav-h1">
+                        <p class=favanimatin id="fav">main course </p>
+                    </h1>
+                </div>
+            </div>
 
+            <br> <br>
             <!-- ---------------   item Main 1 BEEF STEAK ------------------------- -->
             <br>
             <br>
-            <div class="flex-container-steak" id="main">
+            <div class="flex-container-steak">
                 <div class="flex-item-left-h1-steak">#BEEF STEAK</div>
             </div>
             <br> <br> <br><br>
@@ -491,9 +506,9 @@
                     </div>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
-          <!-- ---------------   item Main 2 FISH MANDHI ------------------------- -->
+            <!-- ---------------   item Main 2 FISH MANDHI ------------------------- -->
             <div class="flex-container-mandhi">
                 <div class="flex-item-left-h1-mandhi">#FISH MANDHI</div>
             </div>
@@ -501,7 +516,7 @@
             <div class="flex-container-mandhi">
                 <div class="flex-item-left-mandhi">
                     <div class="image-fader-mandhi">
-                      <img src="main/King-Fish-Grilled-Rice.jpg" />
+                        <img src="main/King-Fish-Grilled-Rice.jpg" />
                     </div>
                 </div>
                 <div class="flex-item-right-mandhi">
@@ -513,15 +528,26 @@
                     </p>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
             <!-- ------------------------------ main course end ------------------- -->
 
 
             <!-- -------------------------------   cake start     ------------------------ -->
+            <!-- cake head h1 -->
+            <!-- same css class in the favourites -->
+            <br> <br> <br>
+            <div class="flex-container-fav" id="cake">
+                <div class="flex-item-fav">
+                    <h1 class="flex-item-fav-h1">
+                        <p class=favanimatin id="fav">cakes </p>
+                    </h1>
+                </div>
+            </div>
 
+            <br> <br>
             <!-- ---------------   item CAKE 1 CONFETTI CAKE  ------------------------- -->
-            <div class="flex-container-Confetti-cake" id="cake">
+            <div class="flex-container-Confetti-cake">
                 <div class="flex-item-left-h1-Confetti-cake"># CONFETTI CAKE</div>
             </div>
             <br> <br> <br><br>
@@ -537,7 +563,7 @@
                     </div>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
 
             <!-- ---------------   item CAKE 1 CHOCALATE  CAKE  ------------------------- -->
@@ -558,21 +584,32 @@
                     </p>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
             <!-- -------------------------------   cake end     ------------------------ -->
 
             <!-- -------------------------------   cookie start     ------------------------ -->
+            <!-- cookie head h1 -->
+            <!-- same css class in the favourites -->
+            <br> <br> <br>
+            <div class="flex-container-fav" id="cookie">
+                <div class="flex-item-fav">
+                    <h1 class="flex-item-fav-h1">
+                        <p class=favanimatin id="fav">cookies </p>
+                    </h1>
+                </div>
+            </div>
 
+            <br> <br>
             <!-- ---------------   item COOKIE 1 M&M COOKIE  ------------------------- -->
 
             <br>
             <br>
-            <div class="flex-container-MMcookie" id="cookie">
+            <div class="flex-container-MMcookie">
                 <div class="flex-item-left-h1-MMcookie">#M&M COOKIE</div>
             </div>
             <br> <br> <br><br>
             <div class="flex-container-MMcookie">
-            <div class="flex-item-right-MMcookie">
+                <div class="flex-item-right-MMcookie">
                     <p class="PtagFood">They named the candy M&M, which stood for <span
                             style="color: rgb(26, 207, 65);"> “Mars & Murrie”</span> The deal gave Murrie
                         a 20% stake in the candy, but this stake was later bought out by Mars when chocolate rationing
@@ -586,9 +623,9 @@
                     </div>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
-               <!-- ---------------   item COOKIE 1 SUGAR  COOKIE  ------------------------- -->
+            <!-- ---------------   item COOKIE 1 SUGAR  COOKIE  ------------------------- -->
 
 
             <div class="flex-container-sugar-cookie">
@@ -596,7 +633,7 @@
             </div>
             <br> <br> <br><br>
             <div class="flex-container-sugar-cookie">
-                    <div class="flex-item-left-sugar-cookie">
+                <div class="flex-item-left-sugar-cookie">
                     <div class="image-fader-sugar-cookie">
                         <img src="cookie/gluten-free-vegan-frosted-sugar-cookies1.jpg" />
                     </div>
@@ -609,11 +646,11 @@
                     </p>
                 </div>
             </div>
-            <br><br> <br>
+            <br><br> <br><br><br><br><br><br><br><br>
 
             <!-- -------------------------------   cookie   end     ------------------------ -->
 
-<!-- ****************************************************************************************************** -->
+            <!-- ****************************************************************************************************** -->
 
             <!-- ---------------------------  start    FOOOOTER   ---------------------- -->
 
@@ -627,19 +664,20 @@
                 <div class="flex-item-left-footer">
                     <P class="footer-contact">CONTACT</P>
                     <br>
-                    <a href="tel:8943793274" class="footer-tele">call  &nbsp; &nbsp; &nbsp; &nbsp; ON</a>.
+                    <a href="tel:8943793274" class="footer-tele">call &nbsp; &nbsp; &nbsp; &nbsp;ON</a>.
                     <br>
-                    <a href="mailto:jithinputhoorkaran@gmail.com" class="footer-email"> email  &nbsp; &nbsp;  ON </a>
+                    <a href="mailto:jithinputhoorkaran@gmail.com" class="footer-email"> email &nbsp; &nbsp; ON </a>
                     <br>
-                    <P class="footer-copyright">Copyright &copy; Foodi.git 2021 <span class="footer-top"> <a
+                    <P class="footer-copyright">Copyright &copy; <span style="color: rgb(250, 206, 8);">Foodi</span> .
+                        <span style="color: rgb(28, 246, 82);">git</span> 2021 <span class="footer-top"> <a
                                 class="footer-Alink-top" href="#tophead">Top</a></span></P>
                 </div>
             </div>
         </div>
         <!-- ---------------------------  END      FOOOOTER   ---------------------- -->
 
-     </div class="parentBody">
-     <script src="main.js"></script>
-     <script src="firebase.js"></script>
+    </div class="parentBody">
+    <script src="main.js"></script>
+    <script src="firebase.js"></script>
 </body>
 </html>

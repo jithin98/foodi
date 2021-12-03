@@ -49,17 +49,7 @@ function pauseAudio() {
   x.play(); 
 } 
 
-// code3--chat pop up shoot sound//
 
-var x2 = document.getElementById("shoot"); 
-
-function playAudio2() { 
-  x2.play(); 
-} 
-
-function pauseAudio2() { 
-  x2.play(); 
-} 
 
 // code5--- open and close chat pop up form on header 
 

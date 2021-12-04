@@ -456,7 +456,7 @@ textarea::-webkit-scrollbar {
 
 /* When the textarea gets focus,*/
 .form-container textarea:focus {
-    background-color: rgb(197, 197, 197);
+    background-color: black;
     outline: none;
     border: 2px solid #000000;
     font-size: 20px;
